@@ -1,0 +1,21 @@
+body {
+    background-color: #212529;
+}
+.main {
+    color: white;
+}
+.center {
+    display: flex;
+    justify-content: center;  
+}
+.help {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.dark {
+    background-color: #2b3035 !important;
+    color: #aaa !important;
+}
