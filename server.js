@@ -1,12 +1,12 @@
-const express = require('express')
+const express = require('express')();
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
 
 app.use(express.static("public", {
     extensions: ['html', 'htm'],
 }));
 
-app.get('/', (req, res) => {
+app.get("", (req, res) => {
   res.send('Hello World!')
 })
 
